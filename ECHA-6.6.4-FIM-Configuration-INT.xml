@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Import-RMConfig -File "ECHA-6.6.4-FIM-Configuration-INT.xml" -->
+<Lithnet.ResourceManagement.ConfigSync>
+
+  <!-- ManagementPolicyRule -->
+  <Operations>
+ 
+	
+	 <!-- Group Management -->
+
+    <ResourceOperation operation="Update" resourceType="ManagementPolicyRule" id="Distribution list management: Owners can read attributes of group resources">
+      <AnchorAttributes>
+        <AnchorAttribute>DisplayName</AnchorAttribute>
+      </AnchorAttributes>
+      <AttributeOperations>
+        <AttributeOperation operation="none" name="DisplayName">Distribution list management: Owners can read attributes of group resources</AttributeOperation>
+        <AttributeOperation operation="replace" name="Disabled">false</AttributeOperation>
+      </AttributeOperations>
+    </ResourceOperation>
+
+    <ResourceOperation operation="Update" resourceType="ManagementPolicyRule" id="Distribution list management: Owners can update and delete groups they own">
+      <AnchorAttributes>
+        <AnchorAttribute>DisplayName</AnchorAttribute>
+      </AnchorAttributes>
+      <AttributeOperations>
+        <AttributeOperation operation="none" name="DisplayName">Distribution list management: Owners can update and delete groups they own</AttributeOperation>
+        <AttributeOperation operation="replace" name="Disabled">false</AttributeOperation>
+      </AttributeOperations>
+    </ResourceOperation>
+
+    <ResourceOperation operation="Update" resourceType="ManagementPolicyRule" id="Distribution list Management: Users can add or remove any members of groups subject to owner approval">
+      <AnchorAttributes>
+        <AnchorAttribute>DisplayName</AnchorAttribute>
+      </AnchorAttributes>
+      <AttributeOperations>
+        <AttributeOperation operation="none" name="DisplayName">Distribution list Management: Users can add or remove any members of groups subject to owner approval</AttributeOperation>
+        <AttributeOperation operation="replace" name="Disabled">false</AttributeOperation>
+      </AttributeOperations>
+    </ResourceOperation>
+
+    <ResourceOperation operation="Update" resourceType="ManagementPolicyRule" id="Distribution list management: Users can add or remove any members of groups that don't require owner approval">
+      <AnchorAttributes>
+        <AnchorAttribute>DisplayName</AnchorAttribute>
+      </AnchorAttributes>
+      <AttributeOperations>
+        <AttributeOperation operation="none" name="DisplayName">Distribution list management: Users can add or remove any members of groups that don't require owner approval</AttributeOperation>
+        <AttributeOperation operation="replace" name="Disabled">false</AttributeOperation>
+      </AttributeOperations>
+    </ResourceOperation>
+
+    <ResourceOperation operation="Update" resourceType="ManagementPolicyRule" id="Distribution list management: Users can read selected attributes of group resources">
+      <AnchorAttributes>
+        <AnchorAttribute>DisplayName</AnchorAttribute>
+      </AnchorAttributes>
+      <AttributeOperations>
+        <AttributeOperation operation="none" name="DisplayName">Distribution list management: Users can read selected attributes of group resources</AttributeOperation>
+        <AttributeOperation operation="replace" name="Disabled">false</AttributeOperation>
+      </AttributeOperations>
+    </ResourceOperation>
+
+    <ResourceOperation operation="Update" resourceType="ManagementPolicyRule" id="Security group management: Owners can read selected attributes of group resources">
+      <AnchorAttributes>
+        <AnchorAttribute>DisplayName</AnchorAttribute>
+      </AnchorAttributes>
+      <AttributeOperations>
+        <AttributeOperation operation="none" name="DisplayName">Security group management: Owners can read selected attributes of group resources</AttributeOperation>
+        <AttributeOperation operation="replace" name="Disabled">false</AttributeOperation>
+      </AttributeOperations>
+    </ResourceOperation>
+
+    <ResourceOperation operation="Update" resourceType="ManagementPolicyRule" id="Security group management: Owners can update and delete groups they own">
+      <AnchorAttributes>
+        <AnchorAttribute>DisplayName</AnchorAttribute>
+      </AnchorAttributes>
+      <AttributeOperations>
+        <AttributeOperation operation="none" name="DisplayName">Security group management: Owners can update and delete groups they own</AttributeOperation>
+        <AttributeOperation operation="replace" name="Disabled">false</AttributeOperation>
+      </AttributeOperations>
+    </ResourceOperation>
+
+    <ResourceOperation operation="Update" resourceType="ManagementPolicyRule" id="Security group management: Users can add or remove any member of groups subject to owner approval">
+      <AnchorAttributes>
+        <AnchorAttribute>DisplayName</AnchorAttribute>
+      </AnchorAttributes>
+      <AttributeOperations>
+        <AttributeOperation operation="none" name="DisplayName">Security group management: Users can add or remove any member of groups subject to owner approval</AttributeOperation>
+        <AttributeOperation operation="replace" name="Disabled">false</AttributeOperation>
+        <AttributeOperation operation="replace" name="PrincipalSet" type="ref">Set|DisplayName|All Active People</AttributeOperation>
+      </AttributeOperations>
+    </ResourceOperation>
+
+    <ResourceOperation operation="Update" resourceType="ManagementPolicyRule" id="Security group management: Users can read selected attributes of group resources">
+      <AnchorAttributes>
+        <AnchorAttribute>DisplayName</AnchorAttribute>
+      </AnchorAttributes>
+      <AttributeOperations>
+        <AttributeOperation operation="none" name="DisplayName">Security group management: Users can read selected attributes of group resources</AttributeOperation>
+        <AttributeOperation operation="replace" name="Disabled">false</AttributeOperation>
+        <AttributeOperation operation="replace" name="PrincipalSet" type="ref">Set|DisplayName|All Active People</AttributeOperation>
+      </AttributeOperations>
+    </ResourceOperation>
+
+    <ResourceOperation operation="Update" resourceType="ManagementPolicyRule" id="Security groups: Users can add and remove members to open groups">
+      <AnchorAttributes>
+        <AnchorAttribute>DisplayName</AnchorAttribute>
+      </AnchorAttributes>
+      <AttributeOperations>
+        <AttributeOperation operation="none" name="DisplayName">Security groups: Users can add and remove members to open groups</AttributeOperation>
+        <AttributeOperation operation="replace" name="Disabled">false</AttributeOperation>
+        <AttributeOperation operation="replace" name="PrincipalSet" type="ref">Set|DisplayName|All Active People</AttributeOperation>
+      </AttributeOperations>
+    </ResourceOperation>
+
+    <ResourceOperation operation="Update" resourceType="ManagementPolicyRule" id="Synchronization: Synchronization account can read group resources it synchronizes">
+      <AnchorAttributes>
+        <AnchorAttribute>DisplayName</AnchorAttribute>
+      </AnchorAttributes>
+      <AttributeOperations>
+        <AttributeOperation operation="none" name="DisplayName">Synchronization: Synchronization account can read group resources it synchronizes</AttributeOperation>
+        <AttributeOperation operation="replace" name="Disabled">false</AttributeOperation>
+      </AttributeOperations>
+    </ResourceOperation>
+
+    <!-- MPR Synchronization: Synchronization account controls group resources it synchronizes -->
+    <ResourceOperation operation="Update" resourceType="ManagementPolicyRule" id="Synchronization: Synchronization account controls group resources it synchronizes">
+      <AnchorAttributes>
+        <AnchorAttribute>DisplayName</AnchorAttribute>
+      </AnchorAttributes>
+      <AttributeOperations>
+        <AttributeOperation operation="none" name="DisplayName">Synchronization: Synchronization account controls group resources it synchronizes</AttributeOperation>
+        <AttributeOperation operation="replace" name="Disabled">false</AttributeOperation>
+        <AttributeOperation operation="add" name="ActionParameter">agGooglePrimaryEmail</AttributeOperation>
+      </AttributeOperations>
+    </ResourceOperation>
+
+    <ResourceOperation operation="Update" resourceType="ManagementPolicyRule" id="General: Users can read non-administrative configuration resources">
+      <AnchorAttributes>
+        <AnchorAttribute>DisplayName</AnchorAttribute>
+      </AnchorAttributes>
+      <AttributeOperations>
+        <AttributeOperation operation="none" name="DisplayName">General: Users can read non-administrative configuration resources</AttributeOperation>
+        <AttributeOperation operation="replace" name="Disabled">true</AttributeOperation>
+      </AttributeOperations>
+    </ResourceOperation>
+
+    <ResourceOperation operation="Update" resourceType="ManagementPolicyRule" id="User management: Users can read attributes of their own">
+      <AnchorAttributes>
+        <AnchorAttribute>DisplayName</AnchorAttribute>
+      </AnchorAttributes>
+      <AttributeOperations>
+        <AttributeOperation operation="none" name="DisplayName">User management: Users can read attributes of their own</AttributeOperation>
+        <AttributeOperation operation="replace" name="Disabled">false</AttributeOperation>
+      </AttributeOperations>
+    </ResourceOperation>
+
+    <ResourceOperation operation="Update" resourceType="ManagementPolicyRule" id="User management: Users can read selected attributes of other users">
+      <AnchorAttributes>
+        <AnchorAttribute>DisplayName</AnchorAttribute>
+      </AnchorAttributes>
+      <AttributeOperations>
+        <AttributeOperation operation="none" name="DisplayName">User management: Users can read selected attributes of other users</AttributeOperation>
+        <AttributeOperation operation="replace" name="Disabled">false</AttributeOperation>
+      </AttributeOperations>
+    </ResourceOperation>
+
+    <!-- MPR: Group management workflow: Owner approval on add and remove member -->
+    <ResourceOperation operation="Add Update" resourceType="ManagementPolicyRule" id="MPR Group management workflow Owner approval on add and remove member">
+      <AnchorAttributes>
+        <AnchorAttribute>DisplayName</AnchorAttribute>
+      </AnchorAttributes>
+      <AttributeOperations>
+        <AttributeOperation operation="replace" name="DisplayName">Group management workflow: Owner approval on add and remove member</AttributeOperation>
+        <AttributeOperation operation="replace" name="ManagementPolicyRuleType">Request</AttributeOperation>
+        <AttributeOperation operation="replace" name="Disabled">false</AttributeOperation>
+        <AttributeOperation operation="replace" name="PrincipalSet" type="ref">Set|DisplayName|All Active People</AttributeOperation>
+        <AttributeOperation operation="replace" name="ResourceFinalSet" type="ref">Set|DisplayName|Owner Approved Groups</AttributeOperation>
+        <AttributeOperation operation="replace" name="ResourceCurrentSet" type="ref">Set|DisplayName|Owner Approved Groups</AttributeOperation>
+        <AttributeOperation operation="add" name="ActionType">Add</AttributeOperation>
+        <AttributeOperation operation="add" name="ActionType">Remove</AttributeOperation>
+        <AttributeOperation operation="replace" name="ActionParameter">ExplicitMember</AttributeOperation>
+        <AttributeOperation operation="add" name="AuthorizationWorkflowDefinition" type="ref">WorkflowDefinition|DisplayName|Owner Approval Workflow</AttributeOperation>
+        <AttributeOperation operation="replace" name="GrantRight">false</AttributeOperation>
+      </AttributeOperations>
+    </ResourceOperation>
+
+    <!--MPR: Group management workflow: Owner approval on add member-->
+    <ResourceOperation operation="Add Update" resourceType="ManagementPolicyRule" id="MPR Group management workflow: Owner approval on add member">
+      <AnchorAttributes>
+        <AnchorAttribute>DisplayName</AnchorAttribute>
+      </AnchorAttributes>
+      <AttributeOperations>
+        <AttributeOperation operation="none" name="DisplayName">Group management workflow: Owner approval on add member</AttributeOperation>
+        <AttributeOperation operation="replace" name="Disabled">true</AttributeOperation>
+      </AttributeOperations>
+    </ResourceOperation>
+
+
+  </Operations>
+  
+</Lithnet.ResourceManagement.ConfigSync>
